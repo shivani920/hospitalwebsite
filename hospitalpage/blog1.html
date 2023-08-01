@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <title>Blog</title>
+    <style>
+        .home2 {
+            background-image: url(./img/header.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 30%;
+            width: 100%;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .main .fa {
+            padding: 5px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        .main p {
+            padding-top: 5px;
+        }
+        
+        .main .fa:hover {
+            opacity: 0.5;
+        }
+        
+        .home {
+            padding-top: 30px;
+            font-weight: bold;
+        }
+        
+        .ho h1 {
+            color: rgb(11, 11, 11);
+            font-weight: bold;
+            height: auto;
+            width: 100%;
+        }
+        
+        .hoo a {
+            text-decoration-line: none;
+            color: rgb(58, 57, 57);
+        }
+        /* footer */
+        
+        #get .btn {
+            padding: 10px;
+            width: 30%;
+            text-align: center;
+            background-color: darkmagenta;
+            color: #fff;
+        }
+        
+        #get .btn a {
+            text-decoration-line: none;
+            color: #fff;
+        }
+        
+        form {
+            color: rgb(58, 57, 57);
+            padding: 10px;
+        }
+        
+        input {
+            padding: 10px;
+        }
+        
+        .foot {
+            background-image: url("./img/bgfooter.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+            width: 100;
+        }
+        
+        .foot h5 {
+            color: rgb(239, 236, 236);
+            padding: 10px;
+        }
+        
+        .foot ul li {
+            list-style-type: none;
+            padding: 10px;
+            color: gray;
+        }
+        
+        .foot p {
+            padding: 10px;
+            color: gray;
+            font-size: 13px;
+        }
+        
+        .foot h6 {
+            color: gray;
+            font-size: 15px;
+        }
+        
+        .foot .btn {
+            border: 1px solid gray;
+            color: gray;
+            padding: 10px;
+            text-align: center;
+            margin: 5px;
+        }
+        
+        .foot .btn:hover {
+            background-color: #fff;
+        }
+        
+        .con1 li {
+            text-decoration-line: none;
+            color: rgb(58, 57, 57);
+            list-style-type: none;
+        }
+        
+        .con1 .fa {
+            color: rgb(58, 57, 57);
+        }
+        
+        .con1 p {
+            justify-content: end;
+            color: rgb(58, 57, 57);
+        }
+        
+        .con1 ul {
+            padding: 10px;
+            color: rgb(58, 57, 57);
+        }
+        
+        .con2 .btn {
+            border: 1px solid gray;
+            color: gray;
+            padding: 10px;
+            text-align: center;
+            margin: 8px;
+        }
+        
+        .con2 .btn:hover {
+            background-color: rgb(21, 21, 21);
+        }
+        
+        .blog1 ul {
+            display: flex;
+            padding: 10px;
+        }
+        
+        .blog1 ul li {
+            list-style-type: none;
+            color: rgb(167, 163, 163);
+        }
+        
+        .blog2 p {
+            color: rgb(102, 99, 99);
+        }
+        
+        .blog2 .btn {
+            background-color: rgb(5, 165, 5);
+            padding: 13px;
+            text-align: center;
+        }
+        
+        .blog2 .btn a {
+            text-decoration-line: none;
+            color: #fff;
+        }
+        
+        .blog {
+            padding: 10px;
+        }
+        
+        .blog .btn {
+            border: 1px solid gray;
+            color: gray;
+            padding: 10px;
+            text-align: center;
+            margin: 5px;
+        }
+        
+        .blog .btn:hover {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home2 ">
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row bg-primary text-light">
+                    <div class="col-md-12">
+                        <nav>
+                            <div class="row p-2">
+                                <div class="col-md-9" style="justify-content: flex-start;">
+                                    <p>Contact: 1-8700-900 Emergency: 1-8700-911</p>
+                                </div>
+                                <div class="col-md-3" style="justify-content: end;">
+                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                    <i class="fa fa-snapchat-square" aria-hidden="true"></i>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+            <div class="container-fluid">
+                <img src="./img/logo.png" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" style="justify-content: flex-end;" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                HOME
+              </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./home2.html">HOME-2</a></li>
+                                <li><a class="dropdown-item" href="./home3.html">HOME-3</a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./doctor.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                DOCTORS
+              </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./doctor.html">ALL</a></li>
+                                <li><a class="dropdown-item" href="./doctor1.html">CARDIOLOGY</a></li>
+                                <li><a class="dropdown-item" href="./doctor2.html">DENTAL</a></li>
+                                <li><a class="dropdown-item" href="./doctor3.html">NEUROLOGIST</a></li>
+                                <li><a class="dropdown-item" href="./doctor4.html">PEDIATRIC</a></li>
+
+                                <li><a class="dropdown-item" href="./doctor5.html">TRAUMATOLOGY</a></li>
+                                <li><a class="dropdown-item" href="./doctor6.html">XRAY</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./department.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                DEPARTMENTS
+              </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./department.html">ALL</a></li>
+                                <li><a class="dropdown-item" href="./doctor1.html">CARDIOLOGY</a></li>
+                                <li><a class="dropdown-item" href="./doctor2.html">DENTAL</a></li>
+                                <li><a class="dropdown-item" href="./doctor3.html">NEUROLOGIST</a></li>
+                                <li><a class="dropdown-item" href="./doctor4.html">PEDIATRIC</a></li>
+                                <li><a class="dropdown-item" href="./doctor5.html">TRAUMATOLOGY</a></li>
+                                <li><a class="dropdown-item" href="./doctor6.html">XRAY</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gallery.html">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./event.html">EVENTS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PAGES
+              </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./page.html">BLOGS</a></li>
+                                <li><a class="dropdown-item" href="./book.html">BOOK APPOINTMENT</a></li>
+                                <li><a class="dropdown-item" href="./book1.html">FULL WIDTH TEMPLATE</a></li>
+                                <li><a class="dropdown-item" href="./error.html">404 PAGE</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="home mt-5">
+            <div class="container-fluid">
+                <div class="ho p-5">
+                    <div class="row">
+                        <h1>Blogs</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- link -->
+    <section>
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-md-12">
+                    <div class="hoo">
+                        <a href="./index.html">Home</a> > <a href="./page.html">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="blog">
+                    <h2 style="color: rgba(8, 86, 232, 0.76); font-weight:bold;padding:10px; ">Together we can do so much
+                    </h2>
+                    <div class="blog1">
+                        <ul>
+                            <li><i class="fa fa-calendar" aria-hidden="true"></i> Jul 28, 2023</li>
+                            <li><i class="fa fa-user-circle" aria-hidden="true"></i> Ashiddiqi</li>
+                            <li><i class="fa fa-link" aria-hidden="true"></i> Blogs</li>
+                        </ul>
+                    </div>
+                    <img src="./img/blog1.jpg" alt="" class="img-fluid">
+                    <div class="blog2 pt-4">
+                        <p>Chosen from among all others by the Immortal Elders – Solomon, Hercules, Atlas, Zeus, Achilles, Mercury – Billy Batson and his mentor travel the highways and byways of the land on a never-ending mission: to right wrongs, to develop
+                            understanding, and to seek justice for all! In time of dire need, young Billy has been granted the power by the…
+                        </p>
+                        <p>Hey, hey, hey! It’s Fat Albert! Now I’m gonna sing a song for you, and this is gonna show you a thing or two. You’ll have some fun now With me and the gang, learning from each other While we do our thing. Na na na gonna have a
+                            good time! Na na na gonna have a good time! Hey, hey, hey! This is Bill Cosby coming out with music and fun and if you’re not careful, you may learn something before it’s done! Hey, hey, hey!
+                        </p>
+                        <p>Hot dogs, Armour hot dogs. What kind of kids eat Armour hot dogs? Fat kids, skinny kids, kids who climb on rocks. Tough kids, sissy kids, even kids with chicken pox love hot dogs, Armour hot dogs… The dogs kids love to bite!</p>
+                        <p>One thousand years ago, superstition and the sword ruled. It was a time of darkness. It was a world of fear. It was the age of gargoyles. Stone by day, warriors by night, we were betrayed by the humans we had sworn to protect,
+                            frozen in stone by a magic spell for a thousand years. Now, here in Manhattan, the spell is broken, and we live again! We are defenders of the night! We are Gargoyles!</p>
+                        <p>What walks down stairs, alone or in pairs, and makes a slinkity sound? A spring, a spring, a marvelous thing, everyone knows it’s Slinky. It’s Slinky, it’s Slinky, for fun it’s a wonderful toy. It’s Slinky, it’s Slinky, it’s fun
+                            for a girl or a boy. It’s fun for a girl or boy!</p>
+
+                        <p>Enter at your peril, past the vaulted door. Impossible things will happen that the world’s never seen before. In Dexter’s laboratory lives the smartest boy you’ve ever seen, but Dee Dee blows his experiments to Smithereens! There’s
+                            gloom and doom when things go boom in Dexter’s lab!
+                            <br> He was once a little green slab of clay. Gumby! You should see what Gumby can do today. Gumby! He can walk into any book, with his pony pal Pokey, too. If you’ve got a heart then Gumby’s a part of you.</p>
+                    </div>
+                    <hr>
+                    <div class="blog3 p-5">
+                        <h5>Share this Article</h5>
+
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        <i class="fa fa-telegram" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        <i class="fa fa-snapchat-square" aria-hidden="true"></i>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+
+                    </div>
+                    <hr>
+                    <button type="button" class="btn">Beach</button>
+                    <button type="button" class="btn">Health</button>
+                    <button type="button" class="btn">holiday</button>
+                </div>
+                <hr>
+                <p> > Previous Post</p>
+                <h5>The Three Musketeers Surgical Team</h5>
+                <hr>
+                <h5>ABOUT AUTHOR</h5>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="./img/pg.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-10">
+                        <p>Ashiddiqi</p>
+                        <p>I am a professional WordPress developer currently working for ThemeWarrior. There once was a story about a man who could turn invisible. I thought it was only a story.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Leave a Comment</h4>
+                        <hr>
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message </label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Patient Name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Website URL</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                            </div>
+
+                            <div class="mb-3" id="get">
+                                <button type="button" class="btn"><a href="#">SUMBIT</a></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="card">
+                    <div class="body search">
+                        <div class="input-group m-b-0">
+                            <div class="input-group-prepend ">
+                                <span class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="con1 pt-4">
+                    <h4>BLOG CATEGORIES</h4>
+                    <ul>
+
+                        <li>
+                            <i class="fa-solid fa-file" style="color:rgb(58, 57, 57);"></i>
+                            <span> Blogs(10)</p></span>
+                            <hr>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-file" style="color:rgb(58, 57, 57);"></i><span> Counseling (1)</span>
+                            <hr>
+
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-file" style="color:rgb(58, 57, 57);"></i><span> Health (4)</span>
+                            <hr>
+
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-file" style="color:rgb(58, 57, 57);"></i><span> Kids (9)</span>
+                            <hr>
+
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+                <div class="con2 pt-2">
+                    <h4>BLOG Tags</h4>
+                    <button type="button" class="btn">Beach</button>
+                    <button type="button" class="btn">Health</button>
+                    <button type="button" class="btn">holiday</button>
+                    <button type="button" class="btn">Information</button>
+                    <button type="button" class="btn">Kids</button>
+                    <button type="button" class="btn">Music</button>
+                    <button type="button" class="btn">Nature</button>
+                    <button type="button" class="btn">Random</button>
+                    <button type="button" class="btn">Rock</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="text-center text-lg-start ">
+        <div class="foot ">
+            <div class="container ">
+                <div class="row mt-5 p-5 ">
+                    <div class="col-md-4">
+
+                        <h5>CATEGORIES</h5>
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-file" style="color: gray;"></i>
+                                <span> Blogs</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-file" style="color: gray;"></i><span> Counseling</span>
+
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-file" style="color: gray;"></i><span> Health</span>
+
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-file" style="color: gray;"></i><span> Kids</span>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4 ">
+                        <h5>Tags</h5>
+
+                        <button type="button" class="btn">Beach</button>
+                        <button type="button" class="btn">Health</button>
+                        <button type="button" class="btn">holiday</button>
+                        <button type="button" class="btn">Information</button>
+                        <button type="button" class="btn">Kids</button>
+                        <button type="button" class="btn">Music</button>
+                        <button type="button" class="btn">Nature</button>
+                        <button type="button" class="btn">Random</button>
+                        <button type="button" class="btn">Rock</button>
+                    </div>
+                    <div class="col-md-4 ">
+                        <h5>RECENT COMMENTS</h5>
+                        <p>Aziz Rahman on</p>
+                        <h6>My Kinda People, My kinda Place</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-start p-3" style="background-color: rgb(25, 25, 25);color:gray">
+            © 2023 Hospital Plus.
+            <p class="text-end" style="margin-top: -11px;">Designed by ThemeWarrior</p>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

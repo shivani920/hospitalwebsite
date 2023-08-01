@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <title>Department</title>
+    <style>
+        .home2 {
+            background-image: url(./img/header.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 30%;
+            width: 100%;
+        }
+        
+        .main .fa {
+            padding: 5px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        .main p {
+            padding-top: 5px;
+        }
+        
+        .main .fa:hover {
+            opacity: 0.5;
+        }
+        
+        .home {
+            padding-top: 30px;
+            font-weight: bold;
+        }
+        
+        .ho h1 {
+            color: rgb(11, 11, 11);
+            font-weight: bold;
+            height: auto;
+            width: 100%;
+        }
+        
+        .hoo a {
+            text-decoration-line: none;
+            color: rgb(55, 55, 55);
+        }
+        /* hospital */
+        
+        .hos1 .card {
+            margin: 5px;
+            height: 100%;
+        }
+        
+        .hos1 .box {
+            background: linear-gradient(to right, rgb(156, 152, 150), rgb(102, 100, 99));
+            font-family: 'Mandali', sans-serif;
+            text-align: center;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .hos1 .box img {
+            width: 100%;
+            height: auto;
+            transition: all 0.6s ease 0s;
+        }
+        
+        .hos1 .box:hover img {
+            opacity: 0.3;
+            transform: scale(1.2);
+            transform-origin: left;
+        }
+        
+        .hos1 .box-content {
+            color: #fff;
+            width: 85%;
+            opacity: 0;
+            transform: translateX(-50%) translateY(-50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            transition: all 0.4s ease 0.2s;
+        }
+        
+        .hos1 .card-title {
+            color: rgb(13, 82, 202);
+        }
+        
+        .hos1 .card-text {
+            color: rgb(56, 55, 55);
+        }
+        
+        .hos1 .box:hover.hos1 .box-content {
+            opacity: 1;
+        }
+        
+        @media only screen and (max-width:990px) {
+            .hos1 .box {
+                margin: 0 0 30px;
+            }
+        }
+        /* footer */
+        
+        .foot {
+            background-image: url("./img/bgfooter.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+            width: 100;
+        }
+        
+        .foot h5 {
+            color: rgb(239, 236, 236);
+            padding: 10px;
+        }
+        
+        .foot ul li {
+            list-style-type: none;
+            padding: 10px;
+            color: gray;
+        }
+        
+        .foot p {
+            padding: 10px;
+            color: gray;
+            font-size: 13px;
+        }
+        
+        .foot h6 {
+            color: gray;
+            font-size: 15px;
+        }
+        
+        .foot .btn {
+            border: 1px solid gray;
+            color: gray;
+            padding: 10px;
+            text-align: center;
+            margin: 5px;
+        }
+        
+        .foot .btn:hover {
+            background-color: #fff;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home2 ">
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row bg-primary text-light">
+                    <div class="col-md-12">
+                        <nav>
+                            <div class="row p-2">
+                                <div class="col-md-9" style="justify-content: flex-start;">
+                                    <p>Contact: 1-8700-900 Emergency: 1-8700-911</p>
+                                </div>
+                                <div class="col-md-3" style="justify-content: end;">
+                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                    <i class="fa fa-snapchat-square" aria-hidden="true"></i>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+            <div class="container-fluid">
+                <img src="./img/logo.png" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" style="justify-content: flex-end;" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  HOME
+                </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./home2.html">HOME-2</a></li>
+                                <li><a class="dropdown-item" href="./home3.html">HOME-3</a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./doctor.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  DOCTORS
+                </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./doctor.html">ALL</a></li>
+                                <li><a class="dropdown-item" href="./doctor1.html">CARDIOLOGY</a></li>
+                                <li><a class="dropdown-item" href="./doctor2.html">DENTAL</a></li>
+                                <li><a class="dropdown-item" href="./doctor3.html">NEUROLOGIST</a></li>
+                                <li><a class="dropdown-item" href="./doctor4.html">PEDIATRIC</a></li>
+
+                                <li><a class="dropdown-item" href="./doctor5.html">TRAUMATOLOGY</a></li>
+                                <li><a class="dropdown-item" href="./doctor6.html">XRAY</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./department.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  DEPARTMENTS
+                </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./department.html">ALL</a></li>
+                                <li><a class="dropdown-item" href="./doctor1.html">CARDIOLOGY</a></li>
+                                <li><a class="dropdown-item" href="./doctor2.html">DENTAL</a></li>
+                                <li><a class="dropdown-item" href="./doctor3.html">NEUROLOGIST</a></li>
+                                <li><a class="dropdown-item" href="./doctor4.html">PEDIATRIC</a></li>
+                                <li><a class="dropdown-item" href="./doctor5.html">TRAUMATOLOGY</a></li>
+                                <li><a class="dropdown-item" href="./doctor6.html">XRAY</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gallery.html">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./event.html">EVENTS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PAGES
+                </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./page.html">BLOGS</a></li>
+                                <li><a class="dropdown-item" href="./book.html">BOOK APPOINTMENT</a></li>
+                                <li><a class="dropdown-item" href="./book1.html">FULL WIDTH TEMPLATE</a></li>
+                                <li><a class="dropdown-item" href="./error.html">404 PAGE</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="home mt-5">
+            <div class="container-fluid">
+                <div class="ho p-5">
+                    <div class="row">
+                        <h1>Services</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- link -->
+    <section>
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-md-12">
+                    <div class="hoo">
+                        <a href="./index.html">Home</a> > <a href="./services.html">service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- hospital -->
+    <section style="margin-top: 20px;">
+
+
+        <div class="hos1">
+            <div class="container">
+
+                <div class="row pt-5">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="box">
+                                <img src="./img/hos1.jpg" class="img-fluid">
+                                <div class="box-content">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cardiology
+                                </h5>
+
+                                <p class="card-text">Here's the story of a lovely lady, who was bringing up three very lovely...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="box">
+                                <img src="./img/hos2.jpg" class="img-fluid">
+                                <div class="box-content">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Dental</h5>
+
+                                <p class="card-text">We never thought of findin' a place where we belong. Don't have to stand...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="box">
+                                <img src="./img/hos3.jpg" class="img-fluid">
+                                <div class="box-content">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Neurologist</h5>
+
+                                <p class="card-text">You unlock this door with the key of imagination. Beyond it is another dimension:...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="box">
+                                <img src="./img/hos4.jpg" class="img-fluid">
+                                <div class="box-content">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pediatric</h5>
+
+                                <p class="card-text">One thousand years ago, superstition and the sword ruled. It was a time of...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="box">
+                                <img src="./img/hos5.jpg" class="img-fluid">
+                                <div class="box-content">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pulmonary</h5>
+
+                                <p class="card-text">Life is like a hurricane here in Duckburg. Race cars, lasers, aeroplanes - it's...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="box">
+                                <img src="./img/hos6.jpg" class="img-fluid">
+                                <div class="box-content">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Traumatology</h5>
+
+                                <p class="card-text">Your tread must be light and sure, as though your path were upon rice...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="box">
+                                <img src="./img/hos7.jpg" class="img-fluid">
+                                <div class="box-content">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Urology</h5>
+
+                                <p class="card-text">They're creepy and they're kooky, mysterious and spooky. They're all together ooky, the Addams...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="box">
+                                <img src="./img/hos8.jpg" class="img-fluid">
+                                <div class="box-content">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Xray</h5>
+
+                                <p class="card-text">I bet we been together for a million years, And I bet we'll be...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="text-center text-lg-start ">
+        <div class="foot ">
+            <div class="container ">
+                <div class="row mt-5 p-5 ">
+                    <div class="col-md-4">
+
+                        <h5>CATEGORIES</h5>
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-file" style="color: gray;"></i>
+                                <span> Blogs</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-file" style="color: gray;"></i><span> Counseling</span>
+
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-file" style="color: gray;"></i><span> Health</span>
+
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-file" style="color: gray;"></i><span> Kids</span>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4 ">
+                        <h5>Tags</h5>
+
+                        <button type="button" class="btn">Beach</button>
+                        <button type="button" class="btn">Health</button>
+                        <button type="button" class="btn">holiday</button>
+                        <button type="button" class="btn">Information</button>
+                        <button type="button" class="btn">Kids</button>
+                        <button type="button" class="btn">Music</button>
+                        <button type="button" class="btn">Nature</button>
+                        <button type="button" class="btn">Random</button>
+                        <button type="button" class="btn">Rock</button>
+                    </div>
+                    <div class="col-md-4 ">
+                        <h5>RECENT COMMENTS</h5>
+                        <p>Aziz Rahman on</p>
+                        <h6>My Kinda People, My kinda Place</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-start p-3" style="background-color: rgb(25, 25, 25);color:gray">
+            © 2023 Hospital Plus.
+            <p class="text-end" style="margin-top: -11px;">Designed by ThemeWarrior</p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
